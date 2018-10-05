@@ -37,16 +37,6 @@
   <p>Lista em ordem alfabética, para alterar os dados do produto clique no botão 'Alterar', aparecerá na tela os campos para digitar os novos dados,
     para remover um produto do banco de dados é só clicar em 'Excluir'.</p>
 
-  <script>
-    function openForm() {
-      document.getElementById("myForm").style.display = "block";
-    }
-
-    function closeForm() {
-      document.getElementById("myForm").style.display = "none";
-    }
-  </script>
-
   <table id="t01">
     <tr>
       <th>ID</th>
@@ -82,6 +72,16 @@
                 Database::disconnect();
             ?>
   </table>
+  
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+  </script>
 </body>
 
 </html>
