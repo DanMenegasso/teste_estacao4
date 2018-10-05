@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 40px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Buttons */
+.alt-button, .del-button, .ins-button {
+  color: white;
+  font-weight: bold;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  width: 100px;
+}
+
+.alt-button {
+  background-color: blue;
+}
+
+.del-button {
+  background-color: red;
+}
+
+.ins-button {
+  background-color: green;
+}
+
+/* Popup form - hidden*/
+.form-popup {
+  background-color: rgba(55, 55, 55, 0.9);
+  display: none;
+  position: fixed;
+  bottom: 400px;
+  right: 600px;
+  padding: 40px;
+  align-self: center;
+  border: 3px solid black;
+  z-index: 9;
+}
+
+/* Button Hover */
+.form-container .btn:hover, .alt-button:hover, .del-button:hover, .ins-button:hover {
+  opacity: 1;
+}
+
+table {
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+table#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+
+table#t01 tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+table#t01 th {
+  background-color: black;
+  color: white;
+}
+
+h2.popup {
+  color: white;
+}
